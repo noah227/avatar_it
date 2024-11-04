@@ -8,7 +8,6 @@ class AvatarIt:
         self.img: ImageFile = Image.open(path)
         self.width = width
         self.height = height
-        self.img.crop()
         pass
 
     def generate(self):
