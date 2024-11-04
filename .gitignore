@@ -1,0 +1,19 @@
+# dist
+build/
+dist/
+avatar_it.*/
+test/out/
+
+# env
+venv/
+
+# Editor directories and files
+.idea
+!.idea/dictionaries
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+__pycache__/

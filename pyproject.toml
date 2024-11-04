@@ -1,0 +1,29 @@
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#writing-your-pyproject-toml
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "avatar_it"
+version = "0.0.1"
+authors = [
+    { name = "Noah Young", email = "noah227@foxmail.com" },
+]
+description = "Generate random avatar within given image"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pillow"
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+# See https://hatch.pypa.io/latest/config/build/#patterns
+[tool.hatch.build.targets.sdist]
+exclude = ["test/"]
