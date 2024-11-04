@@ -10,7 +10,7 @@ class AvatarIt:
         self.height = height
         pass
 
-    def generate(self):
+    def generate(self) -> ImageFile:
         w, h = self.img.size
         width, height = self.width, self.height
 
