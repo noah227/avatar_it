@@ -8,4 +8,5 @@ if __name__ == '__main__':
     for i in range(10):
         a.generate().save(f"./out/sea.100.{i}.jpg")
         pass
+    a.generate(500, 500).save("./out/sea.500.jpg")
     pass

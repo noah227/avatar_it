@@ -10,9 +10,9 @@ class AvatarIt:
         self._height = height
         pass
 
-    def generate(self) -> ImageFile.ImageFile:
+    def generate(self, width: int = None, height: int = None) -> ImageFile.ImageFile:
         w, h = self.img.size
-        width, height = self._width, self._height
+        width, height = width or self._width, height or self._height
 
         p1X = randint(0, w - width)
         p1Y = randint(0, h - height)
