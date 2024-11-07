@@ -6,13 +6,13 @@ from PIL import Image, ImageFile
 class AvatarIt:
     def __init__(self, path, width: int, height: int):
         self.img: ImageFile = Image.open(path)
-        self.width = width
-        self.height = height
+        self._width = width
+        self._height = height
         pass
 
     def generate(self) -> ImageFile.ImageFile:
         w, h = self.img.size
-        width, height = self.width, self.height
+        width, height = self._width, self._height
 
         p1X = randint(0, w - width)
         p1Y = randint(0, h - height)
@@ -21,4 +21,5 @@ class AvatarIt:
 
 
 if __name__ == '__main__':
+
     pass
